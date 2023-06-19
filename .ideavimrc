@@ -1,0 +1,72 @@
+" Map leader to space ---------------------
+let mapleader=' '
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" 插件
+set surround
+set easymotion
+nmap s <Plug>(easymotion-s)
+
+set scrolloff=6
+set history=100000
+” 设置vim内拷贝通用----------------------
+set clipboard=unnamed
+set incsearch
+" 忽略大小写
+set ignorecase
+set smartcase
+
+" 在normal模式下保持英文输入法（IdeaVimExtension）
+:set keep-english-in-normal-and-restore-in-insert
+
+" 用H和L方便的实现跳转行首和行尾的操作
+noremap L $
+noremap H ^
+
+nnoremap U <C-r>
+" 进入visual block模式
+noremap <leader>v <C-v>
+"
+nnoremap <leader>a <C-a>
+"在normal模式下快速添加空格
+nmap <Enter> i<Space><Esc>
+
+""""""""""""""""""""""""""""""""""""""重构篇""""""""""""""""""""""""""""""""""""""
+"元素名称重构
+noremap <leader>r :action RenameElement<CR>
+"移动重构
+noremap <leader>mv :action Move<CR>
+
+
+""""""""""""""""""""""""""""""""""""""窗口篇""""""""""""""""""""""""""""""""""""""
+"隐藏当前窗口
+noremap <leader>h :action HideActiveWindow<CR>
+" 激活terminal窗口
+nnoremap <leader>ot :action ActivateTerminalToolWindow<CR>
+"重启.ideavim文件"
+nnoremap <leader>kr :action IdeaVim.ReloadVimRc.reload<CR>
+" (切换标签)
+noremap tl gt
+noremap th gT
+" 关闭其他标签
+nnoremap <leader>to :action CloseAllEditorsButActive<CR>
+" 关闭右侧标签
+nnoremap <leader>tl :action CloseAllToTheRight<CR>
+" 关闭左侧标签
+nnoremap <leader>th :action CloseAllToTheLeft<CR>
+"折叠代码
+noremap zf :action ExpandCollapseToggleAction<CR>
+""""""""""""""""""""""""""""""""""""""查找篇""""""""""""""""""""""""""""""""""""""
+"查看下一个错误
+nnoremap <leader>w :action GotoNextError<CR>
+nnoremap <leader>b :action GotoPreviousError<CR>
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+""""""""""""""""""""""""""""""""""""""查看篇""""""""""""""""""""""""""""""""""""""
+" error description
+noremap <leader>e <ESC>:action ShowErrorDescription<CR>
+" usage
+noremap <leader>u <ESC>:action ShowUsages<CR>
+" 鼠标悬浮时显示文档信息
+nnoremap gh :action QuickJavaDoc<cr>
+nnoremap <Leader>i :action ShowIntentionActions<CR>
