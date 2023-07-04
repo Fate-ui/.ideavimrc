@@ -9,6 +9,7 @@ nmap s <Plug>(easymotion-s)
 
 set scrolloff=6
 set history=100000
+set relativenumber
 ” 设置vim内拷贝通用----------------------
 set clipboard=unnamed
 set incsearch
@@ -16,8 +17,7 @@ set incsearch
 set ignorecase
 set smartcase
 
-" 在normal模式下保持英文输入法（IdeaVimExtension）
-:set keep-english-in-normal-and-restore-in-insert
+set keep-english-in-normal-and-restore-in-insert
 
 " 用H和L方便的实现跳转行首和行尾的操作
 noremap L $
@@ -50,6 +50,9 @@ noremap tl gt
 noremap th gT
 " 关闭其他标签
 nnoremap <leader>to :action CloseAllEditorsButActive<CR>
+
+" 关闭当前标签
+nnoremap <leader>tt :action CloseContent<CR>
 " 关闭右侧标签
 nnoremap <leader>tl :action CloseAllToTheRight<CR>
 " 关闭左侧标签
