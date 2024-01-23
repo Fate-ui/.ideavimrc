@@ -6,6 +6,8 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 set surround
 set easymotion
 nmap s <Plug>(easymotion-s)
+" 显示行号
+set nu
 
 set scrolloff=6
 set history=100000
@@ -17,7 +19,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-set keep-english-in-normal-and-restore-in-insert
 
 " 用H和L方便的实现跳转行首和行尾的操作
 noremap L $
@@ -29,14 +30,13 @@ noremap <leader>v <C-v>
 "
 nnoremap <leader>a <C-a>
 "在normal模式下快速添加空格
-nmap <Enter> i<Space><Esc>
+nnoremap <Enter> i<Space><Esc>
 
 """"""""""""""""""""""""""""""""""""""重构篇""""""""""""""""""""""""""""""""""""""
 "元素名称重构
 noremap <leader>r :action RenameElement<CR>
 "移动重构
 noremap <leader>mv :action Move<CR>
-
 
 """"""""""""""""""""""""""""""""""""""窗口篇""""""""""""""""""""""""""""""""""""""
 "隐藏当前窗口
@@ -50,6 +50,7 @@ noremap tl gt
 noremap th gT
 " 关闭其他标签
 nnoremap <leader>to :action CloseAllEditorsButActive<CR>
+
 
 " 关闭当前标签
 nnoremap <leader>tt :action CloseContent<CR>
