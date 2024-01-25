@@ -37,6 +37,8 @@ nnoremap <Enter> i<Space><Esc>
 noremap <leader>r :action RenameElement<CR>
 "移动重构
 noremap <leader>mv :action Move<CR>
+"优化导入
+noremap <leader>oi :action OptimizeImports<CR>
 
 """"""""""""""""""""""""""""""""""""""窗口篇""""""""""""""""""""""""""""""""""""""
 "隐藏当前窗口
