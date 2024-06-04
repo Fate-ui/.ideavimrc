@@ -76,7 +76,5 @@ noremap <leader>u <ESC>:action ShowUsages<CR>
 " 鼠标悬浮时显示文档信息
 nnoremap gh :action QuickJavaDoc<cr>
 nnoremap <Leader>i :action ShowIntentionActions<CR>
-
-" 关掉错误提示音
 set noerrorbells
 set visualbell
