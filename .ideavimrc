@@ -31,6 +31,8 @@ noremap <leader>v <C-v>
 nnoremap <leader>a <C-a>
 "在normal模式下快速添加空格
 nnoremap <Enter> i<Space><Esc>
+"在normal模式下 d + f 快速删除函数
+nnoremap df V$%d
 
 """"""""""""""""""""""""""""""""""""""重构篇""""""""""""""""""""""""""""""""""""""
 "元素名称重构
