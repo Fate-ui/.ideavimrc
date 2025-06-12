@@ -9,6 +9,9 @@ nmap s <Plug>(easymotion-s)
 " 显示行号
 set nu
 
+" 配置在进行复制操作时不覆盖原来复制的东西
+vmap p \"_dP
+
 set scrolloff=6
 set history=100000
 set relativenumber
