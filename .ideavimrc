@@ -57,7 +57,8 @@ noremap tl gt
 noremap th gT
 " 关闭其他标签
 nnoremap <leader>to :action CloseAllEditorsButActive<CR>
-
+" 打开当前文件在目录中的位置
+nmap <leader>o <Action>(SelectInProjectView)
 
 " 关闭当前标签
 nnoremap <leader>tt :action CloseContent<CR>
