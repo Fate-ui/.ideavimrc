@@ -1,0 +1,187 @@
+{
+  // 默认格式化工具选择prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 保存的时候自动格式化
+  "editor.formatOnSave": true,
+  //开启自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  // 配置stylelint检查的文件类型范围
+  "stylelint.validate": ["css", "scss", "vue", "html"], // 与package.json的scripts对应
+  "stylelint.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 配置语言的文件关联
+  "files.associations": {
+    "pages.json": "jsonc", // pages.json 可以写注释
+    "manifest.json": "jsonc" // manifest.json 可以写注释
+  },
+  "cSpell.words": [
+    "climblee",
+    "commitlint",
+    "dcloudio",
+    "feige",
+    "qrcode",
+    "refresherrefresh",
+    "safeareainsets",
+    "scrolltolower",
+    "tabbar",
+    "unibest",
+    "uvui",
+    "WechatMiniprogram"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "i18n-ally.localesPaths": ["src/locale"],
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.leader": "<space>",
+  "editor.lineNumbers": "relative",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-f>": false
+  },
+  // visual模式下
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    }
+  ],
+  // insert模式下键映射
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["s"],
+      "after": ["leader", "leader", "s"]
+    },
+    {
+      "before": ["<leader>", "t", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["<leader>", "t", "h"],
+      "commands": ["workbench.action.closeEditorsToTheLeft"]
+    },
+    {
+      "before": ["<leader>", "t", "l"],
+      "commands": ["workbench.action.closeEditorsToTheRight"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["t", "h"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["t", "l"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["U"],
+      "after": ["<C-r>"]
+    },
+    {
+      "before": ["<leader>", "t", "t"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["d", "f"],
+      "after": ["V", "$", "%", "d"]
+    },
+    // S 代码重构相关
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "o", "i"],
+      "commands": ["typescript.removeUnusedImports"]
+    },
+    // E 代码重构相关
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "svg.preview.mode": "svg",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "vue.autoInsert.dotValue": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.agent.thinkingTool": true,
+  "chat.agent.enabled": true,
+  "chat.mcp.discovery.enabled": true,
+  "explorer.confirmDelete": false,
+  "github.copilot.selectedCompletionModel": "",
+  "terminal.integrated.profiles.windows": {
+    "MyBash": {
+      "path": "D:\\Git\\bin\\bash.exe"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
+}
