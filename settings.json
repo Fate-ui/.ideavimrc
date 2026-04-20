@@ -7,7 +7,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.fixAll.eslint": "explicit",
-    "source.fixAll.stylelint": "explicit"
+    "source.fixAll.stylelint": "explicit",
   },
   // 配置stylelint检查的文件类型范围
   "stylelint.validate": ["css", "scss", "vue", "html"], // 与package.json的scripts对应
@@ -16,24 +16,24 @@
   "less.validate": false,
   "scss.validate": false,
   "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[dotenv]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   // 配置语言的文件关联
   "files.associations": {
     "pages.json": "jsonc", // pages.json 可以写注释
-    "manifest.json": "jsonc" // manifest.json 可以写注释
+    "manifest.json": "jsonc", // manifest.json 可以写注释
   },
   "cSpell.words": [
     "climblee",
@@ -47,7 +47,7 @@
     "tabbar",
     "unibest",
     "uvui",
-    "WechatMiniprogram"
+    "WechatMiniprogram",
   ],
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "i18n-ally.localesPaths": ["src/locale"],
@@ -61,127 +61,153 @@
     "<C-c>": false,
     "<C-s>": false,
     "<C-z>": false,
-    "<C-f>": false
+    "<C-f>": false,
   },
   // visual模式下
   "vim.visualModeKeyBindings": [
     {
       "before": ["H"],
-      "after": ["^"]
+      "after": ["^"],
     },
     {
       "before": ["L"],
-      "after": ["g", "_"]
-    }
+      "after": ["g", "_"],
+    },
   ],
   // insert模式下键映射
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
+      "after": ["<Esc>"],
+    },
   ],
   "vim.operatorPendingModeKeyBindings": [
     {
       "before": ["H"],
-      "after": ["^"]
+      "after": ["^"],
     },
     {
       "before": ["L"],
-      "after": ["g", "_"]
-    }
+      "after": ["g", "_"],
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["s"],
-      "after": ["leader", "leader", "s"]
+      "after": ["leader", "leader", "s"],
     },
     {
       "before": ["<leader>", "t", "o"],
-      "commands": ["workbench.action.closeOtherEditors"]
+      "commands": ["workbench.action.closeOtherEditors"],
     },
     {
       "before": ["<leader>", "t", "h"],
-      "commands": ["workbench.action.closeEditorsToTheLeft"]
+      "commands": ["workbench.action.closeEditorsToTheLeft"],
     },
     {
       "before": ["<leader>", "t", "l"],
-      "commands": ["workbench.action.closeEditorsToTheRight"]
+      "commands": ["workbench.action.closeEditorsToTheRight"],
     },
     {
       "before": ["H"],
-      "after": ["^"]
+      "after": ["^"],
     },
     {
       "before": ["L"],
-      "after": ["g", "_"]
+      "after": ["g", "_"],
     },
     {
       "before": ["<leader>", "w"],
-      "commands": ["editor.action.marker.next"]
+      "commands": ["editor.action.marker.next"],
     },
     {
       "before": ["<leader>", "b"],
-      "commands": ["editor.action.marker.prev"]
+      "commands": ["editor.action.marker.prev"],
     },
     {
       "before": ["<leader>", "e"],
-      "commands": ["editor.action.showHover"]
+      "commands": ["editor.action.showHover"],
     },
     {
       "before": ["<leader>", "u"],
-      "commands": ["editor.action.referenceSearch.trigger"]
+      "commands": ["editor.action.referenceSearch.trigger"],
     },
     {
       "before": ["t", "h"],
-      "commands": ["workbench.action.previousEditor"]
+      "commands": ["workbench.action.previousEditor"],
     },
     {
       "before": ["t", "l"],
-      "commands": ["workbench.action.nextEditor"]
+      "commands": ["workbench.action.nextEditor"],
     },
     {
       "before": ["U"],
-      "after": ["<C-r>"]
+      "after": ["<C-r>"],
     },
     {
       "before": ["<leader>", "t", "t"],
-      "commands": ["workbench.action.closeActiveEditor"]
+      "commands": ["workbench.action.closeActiveEditor"],
     },
     {
       "before": ["d", "f"],
-      "after": ["V", "$", "%", "d"]
+      "after": ["V", "$", "%", "d"],
+    },
+    {
+      "before": ["c", "f"],
+      "after": ["V", "$", "%", "c"],
+    },
+    {
+      "before": ["y", "f"],
+      "after": ["V", "$", "%", "y"],
+    },
+    {
+      "before": ["v", "f"],
+      "after": ["V", "$", "%"],
     },
     // S 代码重构相关
     {
       "before": ["<leader>", "r"],
-      "commands": ["editor.action.rename"]
+      "commands": ["editor.action.rename"],
     },
     {
       "before": ["<leader>", "o", "i"],
-      "commands": ["typescript.removeUnusedImports"]
+      "commands": ["typescript.removeUnusedImports"],
     },
     // E 代码重构相关
   ],
   "security.workspace.trust.untrustedFiles": "open",
   "svg.preview.mode": "svg",
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false
-  },
   "vue.autoInsert.dotValue": true,
   "github.copilot.chat.codesearch.enabled": true,
   "github.copilot.chat.agent.thinkingTool": true,
-  "chat.agent.enabled": true,
-  "chat.mcp.discovery.enabled": true,
+  "chat.mcp.discovery.enabled": {
+    "claude-desktop": true,
+    "windsurf": true,
+    "cursor-global": true,
+    "cursor-workspace": true,
+  },
   "explorer.confirmDelete": false,
   "github.copilot.selectedCompletionModel": "",
   "terminal.integrated.profiles.windows": {
     "MyBash": {
-      "path": "D:\\Git\\bin\\bash.exe"
-    }
+      "path": "D:\\Git\\bin\\bash.exe",
+    },
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash"
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "augment.nextEdit.showDiffInHover": true,
+  "augment.completions.enableQuickSuggestions": false,
+  "chat.mcp.autostart": "newAndOutdated",
+  "console-ninja.featureSet": "Community",
+  "chatgpt.apiBase": "https://agentrouter.org/v1",
+  "chatgpt.config": {
+    "pepreferred_auth_method": "api_key",
+    "model_provider": "openai-chat-completions",
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "leetcode.endpoint": "leetcode",
+  "go.toolsManagement.autoUpdate": true,
+  "chat.mcp.gallery.enabled": true,
+  "redhat.telemetry.enabled": true,
 }
